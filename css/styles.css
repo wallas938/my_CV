@@ -1,0 +1,217 @@
+@keyframes upSideDown {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(180deg);}
+}
+
+@keyframes rightSideUp {
+  from {transform: rotate(180deg);}
+  to {transform: rotate(0deg);}
+}
+
+body {
+  padding: 4% 4%;
+  font-family: 'Sniglet', cursive;
+}
+
+#myCV {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-title > h1 {
+  font-size: 3rem;
+}
+
+.name-title > p {
+  color: RGB(55,89,212);
+  font-size: 2.5rem;
+}
+
+.contact {
+  font-size: 1.3rem;
+}
+
+#block-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-aside {
+  display: flex;
+  justify-content: space-between;
+}
+
+main, .a-propos-de-moi {
+  width: 80%;
+}
+
+aside {
+  text-align: left;
+  width: 16%;
+  margin-left: 80px;
+}
+
+#info-divers {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+#langues {
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h3, #langues > p, #info-divers {
+  padding-left: 15px;
+}
+
+.block-date-formation, .block-date-experiences {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.date {
+  width: 40%;
+}
+
+.formation, .experience {
+  width: 45%;
+}
+
+.icons {
+  margin-right: 10px;
+}
+
+.fa-language {
+  font-size: 1.4rem;
+}
+
+.fa-arrow-alt-circle-down{
+  cursor: pointer;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+.desktop-arrow, .first-arrow {
+  margin-left: 10px;
+}
+
+#mobile-arrow-block {
+  display: none;
+}
+
+.techno {
+  font-weight: bold;
+}
+
+li {
+  list-style: square;
+}
+
+.techno {
+  margin-right: 50px;
+  display: inline-block;
+  width: 100px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: sub;
+  position: relative;
+  bottom: 2px;
+}
+#filled {
+  background-color:blue;
+}
+@media screen and (max-width: 1100px) {
+
+  #block-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    margin: 80px;
+  }
+
+  h3, .name-title > h1, .name-title > p, .contact, .a-propos-de-moi {
+    text-align: center;
+  }
+
+  h3 {
+    width: 190px;
+  }
+
+  #competences-window {
+    margin: 0 auto 50px auto;
+    width: 335px;
+  }
+
+  .toggleblock, #competences-window {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #competences {
+    min-width: 335px;
+  }
+
+  .a-propos-de-moi, h3 {
+    margin: 0 auto;
+  }
+
+  #formations-diplomes, #professionals-experiences {
+    max-width: 45%;
+  }
+
+  .block-date-formation, .block-date-experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .date {
+    color: red;
+  }
+
+  .date, .formation, .experience, .employeur {
+    margin: 0 auto;
+  }
+
+  .flex-viewport {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  aside {
+    display: none;
+  }
+
+  #mobile-arrow-block {
+    display: block;
+  }
+
+  .desktop-arrow {
+    display: none !important;
+  }
+
+  .fa-arrow-alt-circle-down{
+    transform: rotate(180deg);
+  }
+}
